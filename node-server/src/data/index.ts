@@ -1,0 +1,1 @@
+export { sampleUser } from './user';

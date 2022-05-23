@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index 26c2a65..031c373 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -132,6 +132,7 @@ module.exports = function (webpackEnv) {
+           // https://github.com/facebook/create-react-app/issues/2677
+           ident: 'postcss',
+           plugins: () => [
++            require('tailwindcss'),
+             require('postcss-flexbugs-fixes'),
+             require('postcss-preset-env')({
+               autoprefixer: {

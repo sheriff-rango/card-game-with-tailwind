@@ -1,0 +1,23 @@
+type Game {
+  id: ID!
+}
+
+type DealResult {
+  success: Boolean!
+  game: Game
+}
+
+
+type User {
+  id: ID!
+  username: String
+  games: [Game!]
+}
+
+type Query {
+  me: User
+}
+
+type Mutation {
+  deal: DealResult
+}
